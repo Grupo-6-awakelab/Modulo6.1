@@ -5,11 +5,18 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/crearcapacitacion")
-public class CrearCapacitacionController {
+@RequestMapping("/capacitacion")
+public class CapacitacionController {
 
     @GetMapping
-    public String crearCapacitacion(){
+    public String listarCapacitacion() {
+        return "administrarcapacitacion";
+    }
+    @GetMapping("/crear")
+    public String crearCapacitacion() {
         return "crearcapacitacion";
     }
+
+
+
 }
