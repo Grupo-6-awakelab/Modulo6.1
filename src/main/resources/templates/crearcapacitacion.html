@@ -45,14 +45,24 @@
     <br>
 
     <div class="row md-4">
-      <label id="name" for="name">Nombre Capacitación</label>
-      <input class="form-control col-md-6" type="text" >
-      <label id="detalle" for="detalle">Detalle</label>
-      <input class="form-control" type="text">
-      <!--fin formulario-->
+      <form method="post" action="/capacitacion/crear">
+        <input type="hidden" id="id" name="id" class="form-control" value="0">
+        <div>
+          <label class="form-label" for="name">Nombre:</label>
+          <input type="text" id="name" name="name" class="form-control">
+        </div>
+        <div>
+          <label class="form-label" for="detalle">detalle:</label>
+          <input type="text" id="detalle" name="detalle" class="form-control">
+        </div>
+        <div class="pt-3">
+          <button class="btn btn-primary" type="submit">Crear</button>
+        </div>
+      </form>
     </div>
-    <br>
-    <button class="btn btn-primary">Guardar</button>
+
+
+
   </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
