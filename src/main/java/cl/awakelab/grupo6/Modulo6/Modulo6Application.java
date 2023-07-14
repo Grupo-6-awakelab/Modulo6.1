@@ -1,4 +1,4 @@
-package cl.awakelab.grupo6.Modulo6.controller;
+package cl.awakelab.grupo6.Modulo6;
 
 import cl.awakelab.grupo6.Modulo6.config.AppConfig;
 import org.springframework.boot.SpringApplication;

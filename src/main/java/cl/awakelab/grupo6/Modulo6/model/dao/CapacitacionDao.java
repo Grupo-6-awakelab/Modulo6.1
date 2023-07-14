@@ -30,4 +30,10 @@ public class CapacitacionDao implements ICapacitacionDao{
         String detalle = c.getDetalle();
         return list.add(new Capacitacion(id, name, detalle));
     }
+
+    @Override
+    public Capacitacion obtenerPorId(int id) {
+        return list.stream().filter(s -> s.getId() == id).findFirst().orElse(null);
+    }
+
 }

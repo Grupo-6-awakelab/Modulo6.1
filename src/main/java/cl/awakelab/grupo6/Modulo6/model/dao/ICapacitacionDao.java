@@ -8,6 +8,7 @@ public interface ICapacitacionDao {
 
     List<Capacitacion> obtenerCapacitaciones();
     boolean crearCapacitacion(Capacitacion c);
+    Capacitacion obtenerPorId(int id);
 
 
 
