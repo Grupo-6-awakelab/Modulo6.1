@@ -30,7 +30,7 @@ public class CapacitacionController {
 
 
         model.addAttribute("capacitaciones", service.obtenerCapacitaciones());
-
+        logger.info("se listan todas las capacitaciones");
         return "administrarcapacitacion";
     }
 

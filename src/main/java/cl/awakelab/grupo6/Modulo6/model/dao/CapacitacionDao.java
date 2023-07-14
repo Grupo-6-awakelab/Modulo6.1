@@ -28,6 +28,8 @@ public class CapacitacionDao implements ICapacitacionDao{
         int id = c.getId();
         String name = c.getName();
         String detalle = c.getDetalle();
+        System.out.println("Titulo: " + name);
+        System.out.println("Detalle: " + detalle);
         return list.add(new Capacitacion(id, name, detalle));
     }
 }
