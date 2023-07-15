@@ -22,5 +22,10 @@ public class CapacitacionService {
 
     public boolean crearCapacitacion(Capacitacion c){
         return dao.crearCapacitacion(c);
+
+    }
+
+    public Capacitacion obtenerPorId(int id){
+        return dao.obtenerPorId(id);
     }
 }
