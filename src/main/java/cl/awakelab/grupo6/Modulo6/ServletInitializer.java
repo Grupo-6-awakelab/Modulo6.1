@@ -1,4 +1,4 @@
-package cl.awakelab.grupo6.Modulo6.controller;
+package cl.awakelab.grupo6.Modulo6;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
