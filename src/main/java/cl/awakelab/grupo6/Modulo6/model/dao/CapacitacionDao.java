@@ -24,8 +24,7 @@ public class CapacitacionDao implements ICapacitacionDao{
     }
 
     @Override
-    public boolean crearCapacitacion(Capacitacion c) {
-return false;
+    public boolean crearCapacitacion(Capacitacion c) {return jdbcTemplate.update("insert into capacitacion (nombre, detalle) values (?, ?)",c.getName(),c.getDetalle()) > 0;
     }
 
     @Override
