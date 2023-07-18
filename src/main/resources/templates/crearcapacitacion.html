@@ -44,7 +44,7 @@
     <br>
 
     <div class="row md-4">
-      <form th:with="action=${isNew ? '/crear' : '/editar/' + capacitacion.id}" method="post" th:action="@{${action}}">
+      <form th:with="action=${isNew ? '/capacitacion/crear' : '/capacitacion/editar/' + capacitacion.id}" method="post" th:action="@{${action}}">
 
           <input th:if="${not isNew}" type="hidden" id="id" name="id" class="form-control" th:value="${capacitacion.id}" />
 
