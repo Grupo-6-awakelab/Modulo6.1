@@ -21,8 +21,10 @@ public class CapacitacionController {
 
     @GetMapping
     public String listarCapacitacion(Model model) {
-        model.addAttribute("capacitaciones", service.obtenerCapacitaciones());
-        return "administrarcapacitacion";
+      
+      model.addAttribute("capacitaciones", service.obtenerCapacitaciones());
+      logger.info('Se han listado las capacitaciones');
+      return "administrarcapacitacion";
     }
 
 
