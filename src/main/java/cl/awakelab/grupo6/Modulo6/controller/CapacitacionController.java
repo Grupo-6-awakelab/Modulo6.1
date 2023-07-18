@@ -23,7 +23,7 @@ public class CapacitacionController {
     public String listarCapacitacion(Model model) {
       
       model.addAttribute("capacitaciones", service.obtenerCapacitaciones());
-      logger.info('Se han listado las capacitaciones');
+      logger.info("Se han listado las capacitaciones");
       return "administrarcapacitacion";
     }
 
